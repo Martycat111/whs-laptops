@@ -1,14 +1,23 @@
-from sanic import Sanic #type: ignore
-from sanic.response import html, css #type: ignore
+from bottle import route, run, template, Bottle, response #type: ignore
 
-app = Sanic("whs-laptops")
+app = Bottle()
 
 main_html_path = "html/main.html"
 
-@app.route('/')
-def main(request):
-    return html(open(main_html_path).read())
+@route('/')
+def main():
+    main = open(main_html_path, "r")
+    data = main.read()
+    main.close()
+    return data
 
-@app.route('/css/<file>')
+@route('/css/<file>')
 def style(file):
-    return css(open("css/" + file).read())
+    response.content_type = "text/css"
+    style = open('css/' + file, "r")
+    data = style.read()
+    style.close()
+    return data
+
+if __name__ == '__main__':
+    run(host='localhost', port=8080, debug=True, reloader=True)

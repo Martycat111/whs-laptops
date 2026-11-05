@@ -139,10 +139,14 @@ header {
 }
 */
 
-
+.teases {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 .tease {
     width: 40vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     height: 10vh;
     justify-self: center;
     align-items: center;

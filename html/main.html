@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
-            <p class="text sitename">WHS laptops</p>
+            <p class="sitename">WHS laptops</p>
+            <nav>
+                <a href="/">
+                <button class="currentbutton firstbutton">
+                    Home
+                </button></a>
+                <a href="/why">
+                <button>
+                    Why?
+                </button></a>
+                <a href="/q+a">
+                <button>
+                    Q&A
+                </button></a>
+                <a href="specs">
+                <button class="lastbutton">
+                    Specs
+                </button></a>
+            </nav>
         </header>
 
         <div class="exhibit">
-            <p class="p1">Highschool student?</p>
+            <p class="p1">High school student?</p>
             <p class="p2">Need a laptop?</p>
             <div class="quickapply">
-                <input class="email" type="email" required="true">
-
+                <input class="email" 
+                type="email" 
+                required="true" 
+                placeholder="jhon@doe.com"
+                maxlength="30">
+                <button class="apply">Apply</button>
             </div>
+        </div>
+        <div class="exhibit-fade"></div>
+        <div class="tease">
+            <p class="whydotext">But why do this?<br>
+                Check out our page on just that!</p>
+            <a>
+                <a href="/why"><button>
+                    <p>Why? <i class="rightarrow"></i></p>
+                </button></a>
+            </a>
         </div>
     </body>
 

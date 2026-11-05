@@ -1,4 +1,4 @@
-from bottle import route, run, template, Bottle, response #type: ignore
+from bottle import route, run, template, Bottle, response, static_file #type: ignore
 
 app = Bottle()
 
@@ -34,8 +34,9 @@ def style(file):
     data = style.read()
     style.close()
     return data
+@route('/elitebook-img/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='img/Elitebook-x360-1030-G3/')
 
 if __name__ == '__main__':
-    Bottle.debug(True)
-    Bottle.reloader(True)
-    run(host='localhost', port=8080)
+    run(host='localhost', port=8080, debug=True, reloader=True)

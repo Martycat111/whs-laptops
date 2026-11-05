@@ -57,7 +57,7 @@ header {
     grid-template-columns: 1fr 1fr;
     padding-top: 20vh;
     padding-left: 10vw;
-    height: 60vh;
+    height: 70vh;
     background-color: skyblue;
 }
 .exhibit-left {
@@ -81,7 +81,7 @@ header {
 }
 
 .p1 {
-    text-align: left;
+    text-align: right;
 }
 .p2 {
     text-align: right;

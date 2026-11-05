@@ -20,4 +20,6 @@ def style(file):
     return data
 
 if __name__ == '__main__':
-    run(host='localhost', port=8080, debug=True, reloader=True)
+    Bottle.debug(True)
+    Bottle.reloader(True)
+    run(host='localhost', port=8080)

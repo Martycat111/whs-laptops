@@ -5,6 +5,8 @@ app = Bottle()
 main_html_path = "html/main.html"
 why_html_path = "html/why.html"
 qa_html_path = "html/qa.html"
+specs_html_path = "html/specs.html"
+
 
 @route('/')
 def main():
@@ -27,6 +29,13 @@ def qa():
     qa.close()
     return data
 
+@route('/specs')
+def specs():
+    specs = open(specs_html_path, "r")
+    data = specs.read()
+    specs.close()
+    return data
+
 @route('/css/<file>')
 def style(file):
     response.content_type = "text/css"
@@ -34,6 +43,15 @@ def style(file):
     data = style.read()
     style.close()
     return data
+
+@route('/js/<file>')
+def script(file):
+    response.content_type = "text/javascript"
+    script = open('js/' + file, "r")
+    data = script.read()
+    script.close()
+    return data
+
 @route('/elitebook-img/<filepath:path>')
 def server_static(filepath):
     return static_file(filepath, root='img/Elitebook-x360-1030-G3/')

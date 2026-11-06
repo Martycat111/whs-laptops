@@ -55,7 +55,7 @@ header {
 .exhibit {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-left: 10vw;
     height: 70vh;
     background-color: skyblue;
@@ -140,6 +140,7 @@ header {
 */
 
 .teases {
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

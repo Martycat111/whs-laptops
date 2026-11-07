@@ -1,49 +1,3 @@
-.sitename {
-    float: left;
-    margin: 1vh 1vw;
-    margin-left: 0;
-    font-size: 1.2vw;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-}
-nav {
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-}
-nav button {
-    border: inset black;
-    border-width: 0.2vw;
-    width: 5vw;
-    height: 4vh;
-}
-nav button:hover {
-    background-color: #aeaeae;
-}
-nav .firstbutton {
-    border-radius: 1vw 0 0 1vw;
-}
-nav .lastbutton {
-    border-radius: 0 1vw 1vw 0;
-}
-.currentbutton {
-    background-color: #aeaeae;
-}
-header {
-    align-items: center;
-    align-content: center;
-    position: fixed;
-    padding: 0.5vh 1vw;
-    margin: 2vh 2vw;
-    height: 6vh;
-
-    border-radius: 1vw;
-
-    background-color: #87b9c8;
-
-    display: block;
-    overflow: auto;
-}
 .title {
     margin-top: 10vh;
     font-size: 5vw;
@@ -66,4 +20,98 @@ header {
     word-wrap: break-word;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+}
+.center h3 {
+    white-space: pre;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+
+/* Style the tab */
+.laptop-types {
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    padding-bottom: 5vh;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks {
+    padding-top: 1vh;
+    width: 15vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.tablinks p {
+    font-size: 0.9vw;
+}
+.tablinks img {
+    max-height: 22.5vh;
+    width: 14vw;
+}
+
+/* Change background color of buttons on hover */
+.laptop-types button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.laptop-types button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+
+    width: auto;
+    height: 63vh;
+
+    border-radius: 1vw;
+    border: solid #747474;
+
+    background-color: #d2d2d2;
+}
+
+.tabcontents {
+    padding-bottom: 10vh;
+}
+
+.defaultOpenContent {
+    display: block;
+}
+
+.specsholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 40vh;
+}
+.spec {
+    height: 40vh;
+}
+
+.fixbutton {
+    overflow: hidden;
+
+    width: auto;
+    padding: 0;
+
+    border: solid #747474;
+    border-radius: 0.4vw;
+}
+.fixbutton img {
+    width: 10vw;
 }

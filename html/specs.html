@@ -13,13 +13,13 @@
                 <button class="firstbutton">
                     Home
                 </button></a>
-                <a href="/why">
-                <button>
-                    Why?
-                </button></a>
                 <a href="/q+a">
                 <button>
                     Q&A
+                </button></a>
+                <a href="/getting-there">
+                <button>
+                    Location
                 </button></a>
                 <a href="specs">
                 <button class="lastbutton currentbutton">
@@ -32,8 +32,122 @@
             <div class="type-selector">
 
             </div>
-            <h2>Those who knwo</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>Laptop Specifications</h2>
+            <p>Click a laptop to see its specs</p>
+            <!-- Tab links -->
+            <div class="laptop-types">
+                <button class="tablinks active" onclick="openCity(event, 'hp-elitebook')">
+                    <img src="/elitebook-img/img1.png">
+                    <p>HP Elitebook</p>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'microsoft-surface')">
+                    <img src="/surface-img/img1.png">
+                    <p>Microsoft Surface</p>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'lenovo-chromealike')">
+                    <img src="/lenovo-chromealike/img1.png">
+                    <p>Lenovo Chrome-alike laptop</p>
+                </button>
+            </div>
+
+            <div class="tabcontents">
+                <div id="hp-elitebook" class="tabcontent defaultOpenContent">
+                    <h2>Hp Elitebook X360 1030 G3</h2>
+                    <p>An overall great light & small laptop</p>
+                    <div class="specsholder">
+                        <div class="spec sleft">
+                            <h2>Ram</h2>
+                            <h3>8GB soldered DDR3</h3>
+
+                            <h2>CPU</h2>
+                            <h3>Core i5 (8th gen)<br>8250U @ 1.6ghz</h3>
+
+                            <h2>GPU</h2>
+                            <h3>Integrated Intel<br>UHD Graphics 620</h3>
+                        </div>
+                        <div class="spec sright">
+                            <h2>Screen</h2>
+                            <h3>13.3" LCD</h3>
+
+                            <h2>Storage</h2>
+                            <h3>256gb nvme</h3>
+
+                            <h2>Weight</h2>
+                            <h3>From 1.25kg</h3>
+                        </div>
+                    </div>
+                    <a href="https://www.ifixit.com/Device/HP_EliteBook_x360_1030_G3">
+                        <button class="fixbutton">
+                            <img src="/img/Ifixit.jpg">
+                        </button>
+                    </a>
+                </div>
+
+                <div id="microsoft-surface" class="tabcontent">
+                    <h2>Microsoft Surface</h2>
+                    <p>Casual laptop-tablet hybrid</p>
+                    <div class="specsholder">
+                        <div class="spec sleft">
+                            <h2>Ram</h2>
+                            <h3></h3>
+
+                            <h2>CPU</h2>
+                            <h3></h3>
+
+                            <h2>GPU</h2>
+                            <h3></h3>
+                        </div>
+                        <div class="spec sright">
+                            <h2>Screen</h2>
+                            <h3></h3>
+
+                            <h2>Storage</h2>
+                            <h3></h3>
+
+                            <h2>Weight</h2>
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <a href="https://www.ifixit.com/Device/HP_EliteBook_x360_1030_G3">
+                        <button class="fixbutton">
+                            <img src="/img/Ifixit.jpg">
+                        </button>
+                    </a>
+                </div>
+
+                <div id="lenovo-chromealike" class="tabcontent">
+                    <h2>Lenovo chrome-alike</h2>
+                    <p>Extremely light wide laptop</p>
+                    <div class="specsholder">
+                        <div class="spec sleft">
+                            <h2>Ram</h2>
+                            <h3></h3>
+
+                            <h2>CPU</h2>
+                            <h3></h3>
+
+                            <h2>GPU</h2>
+                            <h3></h3>
+                        </div>
+                        <div class="spec sright">
+                            <h2>Screen</h2>
+                            <h3></h3>
+
+                            <h2>Storage</h2>
+                            <h3></h3>
+
+                            <h2>Weight</h2>
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <a href="https://www.ifixit.com/Device/HP_EliteBook_x360_1030_G3">
+                        <button class="fixbutton">
+                            <img src="/img/Ifixit.jpg">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </body>
 

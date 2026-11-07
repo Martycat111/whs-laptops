@@ -6,7 +6,7 @@ main_html_path = "html/main.html"
 why_html_path = "html/why.html"
 qa_html_path = "html/qa.html"
 specs_html_path = "html/specs.html"
-
+location_html_path = "html/locate.html"
 
 @route('/')
 def main():
@@ -36,6 +36,14 @@ def specs():
     specs.close()
     return data
 
+@route('/getting-there')
+def locate():
+    location = open(location_html_path, "r")
+    data = location.read()
+    location.close()
+    return data
+
+
 @route('/css/<file>')
 def style(file):
     response.content_type = "text/css"
@@ -56,5 +64,16 @@ def script(file):
 def server_static(filepath):
     return static_file(filepath, root='img/Elitebook-x360-1030-G3/')
 
+@route('/surface-img/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='img/Microsoft-Surface/')
+
+@route('/lenovo-chromealike/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='img/Lenovo-cheapbook/')
+
+@route('/img/Ifixit.jpg')
+def ifiximg():
+    return static_file("Ifixit.jpg", root='img/')
 if __name__ == '__main__':
     run(host='0.0.0.0', port=8080, debug=True, reloader=True)

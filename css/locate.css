@@ -1,0 +1,38 @@
+.title {
+    margin-top: 10vh;
+    font-size: 5vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.center {
+    text-align: center;
+    justify-self: center;
+}
+.center p {
+    white-space: pre;
+    word-wrap: break-word;
+    font-size: 1.4vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.center h2 {
+    white-space: pre;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.center h3 {
+    margin: 0;
+    white-space: pre;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.timelist {
+    width: 20vw;
+    position: relative;
+    left: 25vw;
+}
+.pictures {
+    padding-bottom: 5vh;
+}

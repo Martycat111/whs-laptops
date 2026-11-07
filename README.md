@@ -5,24 +5,16 @@ This git repo is for a [website](https://laptops.409060.xyz).
 Whs laptops is for giving laptops to students who don't have a laptop, or have a damaged, old, or borrowed laptop.
 
 # Setup
-Quick setup (debian apt)
-```
-sudo apt install python3 python-is-python3 python3-bottle
-git clone https://github.com/martycat111/whs-laptops
-cd whs-laptops
-python main.py
-```
-or use pip...
-```
-sudo apt install python3 python3-pip python-is-python3
-git clone https://github.com/martycat111/whs-laptops
-cd whs-laptops
-sudo pip install bottle --no-preserve-root
-python main.py 
-```
+## Quick setup
+* Install python, pip and git
+* Install bottle with `pip install bottle`
+* Clone this repository with `git clone https://github.com/martycat111/whs-laptops
+* Run the main.py
+
 Basically, install python, and bottle.
 Then clone this repo, cd in and run the main.py
 
 # Technical
-This is written in python, using the bottle library for website writing.
+This is written in python, using the bottle library for hosting pages easily.
 The rest is pure Html, Css, and a little Javascript.
+I picked bottle because I am familiar with it, and I don't need any huge frameworks as not many people will use this site.

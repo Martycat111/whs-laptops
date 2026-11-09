@@ -62,15 +62,23 @@ def script(file):
 
 @route('/elitebook-img/<filepath:path>')
 def server_static(filepath):
-    return static_file(filepath, root='img/Elitebook-x360-1030-G3/')
+    return static_file(filepath, root='img/elitebook/')
 
 @route('/surface-img/<filepath:path>')
 def server_static(filepath):
-    return static_file(filepath, root='img/Microsoft-Surface/')
+    return static_file(filepath, root='img/microsoft-surface/')
 
 @route('/lenovo-chromealike/<filepath:path>')
 def server_static(filepath):
-    return static_file(filepath, root='img/Lenovo-cheapbook/')
+    return static_file(filepath, root='img/lenovo-ideapad/')
+
+@route('/lenovo-thinkpad-t450/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='img/thinkpad-t450')
+
+@route('/lenovo-thinkpad-x1-carbon/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='img/thinkpad-x1-carbon')
 
 @route('/img/Ifixit.jpg')
 def ifiximg():

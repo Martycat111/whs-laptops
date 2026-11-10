@@ -80,6 +80,10 @@ def server_static(filepath):
 def server_static(filepath):
     return static_file(filepath, root='img/thinkpad-x1-carbon')
 
+@route('/img/pickup-location')
+def server_static():
+    return static_file("Wheretogo.jpg", root='img/')
+
 @route('/img/Ifixit.jpg')
 def ifiximg():
     return static_file("Ifixit.jpg", root='img/')

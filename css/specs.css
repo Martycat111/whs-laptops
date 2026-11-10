@@ -35,8 +35,8 @@
     gap: 1vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    overflow: hidden;
     padding-bottom: 5vh;
+    width: 79vw;
 }
 
 /* Style the buttons that are used to open the tab content */

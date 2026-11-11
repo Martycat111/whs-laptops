@@ -1,6 +1,8 @@
 # Whs laptops
 This git repo is for a [website](https://laptops.409060.xyz).
 
+<img width="1902" height="960" alt="Preview-whs-laptops" src="https://github.com/user-attachments/assets/5847fd18-a092-446c-9284-30b7354f386d" />
+
 # Purpose
 Whs laptops is for giving laptops to students who don't have a laptop, or have a damaged, old, or borrowed laptop.
 
